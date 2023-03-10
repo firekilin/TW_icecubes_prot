@@ -15,7 +15,7 @@ const prottype =["地上式單口式","地上打倒安全式(單口)","地上式
 router.post ("/", line.middleware (config), async(req, res) => {
   
   const event = req.body.events[0];
-  console.log (event);
+  //console.log (event);
   if (event.type === "message") {
     const message = event.message;
 
@@ -29,9 +29,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
     } 
     else if (message.type == "location")
     {
-      console.log(message.latitude);
-      console.log(message.longitude);
-      console.log(message.address);
+     // console.log(message.latitude);
+      //console.log(message.longitude);
+      //console.log(message.address);
 
       let nearprot=await getnear(event,message.latitude,message.longitude);
       client.replyMessage(event.replyToken, [{
@@ -74,7 +74,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[0][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[0][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -132,7 +132,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[1][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[1][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -193,7 +193,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[2][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[2][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -259,7 +259,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[3][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[3][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -317,7 +317,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[4][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[4][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -377,7 +377,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[5][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[5][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -443,7 +443,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[6][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[6][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -501,7 +501,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[7][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[7][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -561,7 +561,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[8][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[8][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -627,7 +627,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `距離：${(((nearprot[9][0])*111)/1000)} 公尺`
+                    "text": `距離：${(((nearprot[9][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
