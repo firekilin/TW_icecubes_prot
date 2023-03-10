@@ -33,15 +33,505 @@ router.post ("/", line.middleware (config), async(req, res) => {
       console.log(message.longitude);
       console.log(message.address);
 
-      console.log(await getnear(event,message.latitude,message.longitude));
-      client.replyMessage(event.replyToken, [
-        {
-            type: 'location',
-            title: '測試',
-            address: "測試",
-            latitude: 24.950435,
-            longitude: 121.2317493
-        }
+      let nearprot=await getnear(event,message.latitude,message.longitude);
+      client.replyMessage(event.replyToken, [{
+        "type": "flex",
+        "altText": "消防栓",
+        "contents": { "type": "carousel",
+          "contents": [
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[0][3]} & ${nearprot[0][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#27D190",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[0][1]}&${nearprot[0][2]}&${nearprot[0][3]}&${nearprot[0][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ]
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[1][3]} & ${nearprot[1][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#2593FA",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[1][1]}&${nearprot[1][2]}&${nearprot[1][3]}&${nearprot[1][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[2][3]} & ${nearprot[2][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#F77C59",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[2][1]}&${nearprot[2][2]}&${nearprot[2][3]}&${nearprot[2][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            }
+          ] }
+      },{
+        "type": "flex",
+        "altText": "消防栓",
+        "contents": { "type": "carousel",
+          "contents": [
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[3][3]} & ${nearprot[3][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#27D190",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[3][1]}&${nearprot[3][2]}&${nearprot[3][3]}&${nearprot[3][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ]
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[4][3]} & ${nearprot[4][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#2593FA",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[4][1]}&${nearprot[4][2]}&${nearprot[4][3]}&${nearprot[4][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[5][3]} & ${nearprot[5][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#F77C59",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[5][1]}&${nearprot[5][2]}&${nearprot[5][3]}&${nearprot[5][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            }
+          ] }
+      },{
+        "type": "flex",
+        "altText": "消防栓",
+        "contents": { "type": "carousel",
+          "contents": [
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[6][3]} & ${nearprot[6][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#27D190",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[6][1]}&${nearprot[6][2]}&${nearprot[6][3]}&${nearprot[6][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ]
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[7][3]} & ${nearprot[7][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#2593FA",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[7][1]}&${nearprot[7][2]}&${nearprot[7][3]}&${nearprot[7][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[8][3]} & ${nearprot[8][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#F77C59",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[8][1]}&${nearprot[8][2]}&${nearprot[8][3]}&${nearprot[8][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            }
+          ] }
+      },{
+        "type": "flex",
+        "altText": "消防栓",
+        "contents": { "type": "carousel",
+          "contents": [
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[9][3]} & ${nearprot[9][4]}`,
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#27D190",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${nearprot[9][1]}&${nearprot[9][2]}&${nearprot[9][3]}&${nearprot[9][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ]
+              },
+              "styles": { "footer": { "separator": false } }
+            }
+          ] }
+      },
+        
       ]
     )
     } else {
