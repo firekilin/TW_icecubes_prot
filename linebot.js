@@ -65,6 +65,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "layout": "vertical",
                 "contents": [
                   {
+                    "type": "text",
+                    "text": `${nearprot[0][4]}`
+                  },
+                  {
                     "type": "box",
                     "layout": "horizontal",
                     "contents": [
@@ -111,6 +115,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "layout": "vertical",
                 "contents": [
                   {
+                    "type": "text",
+                    "text": `${nearprot[1][4]}`
+                  },
+                  {
                     "type": "box",
                     "layout": "horizontal",
                     "contents": [
@@ -140,6 +148,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  
                   {
                     "type": "text",
                     "text": `${nearprot[2][3]} & ${nearprot[2][4]}`,
@@ -158,6 +167,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[2][4]}`
+                  },
                   {
                     "type": "box",
                     "layout": "horizontal",
@@ -213,6 +226,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "layout": "vertical",
                 "contents": [
                   {
+                    "type": "text",
+                    "text": `${nearprot[3][4]}`
+                  },
+                  {
                     "type": "box",
                     "layout": "horizontal",
                     "contents": [
@@ -258,6 +275,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[4][4]}`
+                  },
                   {
                     "type": "box",
                     "layout": "horizontal",
@@ -306,6 +327,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[5][4]}`
+                  },
                   {
                     "type": "box",
                     "layout": "horizontal",
@@ -361,6 +386,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "layout": "vertical",
                 "contents": [
                   {
+                    "type": "text",
+                    "text": `${nearprot[6][4]}`
+                  },
+                  {
                     "type": "box",
                     "layout": "horizontal",
                     "contents": [
@@ -406,6 +435,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[7][4]}`
+                  },
                   {
                     "type": "box",
                     "layout": "horizontal",
@@ -454,6 +487,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[8][4]}`
+                  },
                   {
                     "type": "box",
                     "layout": "horizontal",
@@ -508,6 +545,10 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [
+                  {
+                    "type": "text",
+                    "text": `${nearprot[9][4]}`
+                  },
                   {
                     "type": "box",
                     "layout": "horizontal",
