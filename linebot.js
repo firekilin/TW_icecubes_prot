@@ -25,10 +25,23 @@ router.post ("/", line.middleware (config), async(req, res) => {
     else if (message.type == "text" && message.text === "查詢系統")
     {
       await showtime (event);
+    } 
+    else if (message.type == "location")
+    {
+      console.log(message.latitude);
+      console.log(message.longitude);
+      console.log(message.address);
+      client.replyMessage(event.replyToken, 
+        {
+            type: 'location',
+            title: '測試',
+            address: message.address,
+            latitude: message.latitude,
+            longitude: message.longitude
+        }
+    )
     } else {
-      console.log(message.type);
-      console.log(message.text);
-      console.log(message);
+      
       client.replyMessage (event.replyToken, [{ type: "text", text: "無此指令" }]);
     }
   }
