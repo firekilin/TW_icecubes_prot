@@ -270,7 +270,7 @@ let getnear =async (event,x,y)=>{
   for(i in alldata){
     let datacontent=alldata[i].split(",");
     let getlatlng=twd97_to_latlng(datacontent[2],datacontent[3]);
-    console.log("lng   "+getlatlng);
+    console.log("lng   "+getlatlng.lat+"  "+getlatlng.lng);
     let getlinelong=getline(x,y,getlatlng.lat,getlatlng.lng);
     console.log("getlinelong   "+getlinelong);
 
@@ -285,7 +285,7 @@ let getnear =async (event,x,y)=>{
   }
   return longlist;
 }
-function getline(x,y,$x,$y){
+function  getline(x,y,$x,$y){
   return (((x-$x)**2)+((y-$y)**2))**(1/2);
 }
 
