@@ -1,0 +1,20 @@
+{
+  "name": "tw_icecubes_prot",
+  "version": "1.0.0",
+  "description": "台灣消防栓line bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "taiwan",
+    "prot"
+  ],
+  "author": "icecubes",
+  "license": "MIT",
+  "dependencies": {
+    "@line/bot-sdk": "^7.5.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
