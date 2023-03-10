@@ -31,14 +31,40 @@ router.post ("/", line.middleware (config), async(req, res) => {
       console.log(message.latitude);
       console.log(message.longitude);
       console.log(message.address);
-      client.replyMessage(event.replyToken, 
+      client.replyMessage(event.replyToken, [
+
         {
-            type: 'location',
-            title: '測試',
-            address: message.address,
-            latitude: message.latitude,
-            longitude: message.longitude
+          "type": "flex",
+          "altText": "冰塊消防栓查詢系統",
+          "contents": { "type": "carousel",
+            "contents": [
+              {
+                type: 'location',
+                title: '測試',
+                address: message.address,
+                latitude: message.latitude,
+                longitude: message.longitude
+              },
+              {
+                type: 'location',
+                title: '測試',
+                address: message.address,
+                latitude: message.latitude,
+                longitude: message.longitude
+            },
+            {
+              type: 'location',
+              title: '測試',
+              address: message.address,
+              latitude: message.latitude,
+              longitude: message.longitude
+          }
+            ] }
         }
+      ]
+
+
+       
     )
     } else {
       
