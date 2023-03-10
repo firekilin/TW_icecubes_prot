@@ -70,11 +70,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[0][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[0][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[0][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[0][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -128,11 +128,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[1][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[1][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[1][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[1][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -189,11 +189,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[2][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[2][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[2][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[2][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -255,11 +255,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[3][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[3][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[3][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[3][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -313,11 +313,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[4][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[4][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[4][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[4][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -373,11 +373,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[5][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[5][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[5][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[5][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -439,11 +439,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[6][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[6][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[6][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[6][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -497,11 +497,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[7][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[7][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[7][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[7][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -557,11 +557,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[8][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[8][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[8][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[8][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
@@ -623,11 +623,11 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   },
                   {
                     "type": "text",
-                    "text": `${((nearprot[9][0])*111)} 公里`
+                    "text": `${Math.round((nearprot[9][0])*111)} 公里`
                   },
                   {
                     "type": "text",
-                    "text": `${(((nearprot[9][0])*111)*1000)} 公尺`
+                    "text": `${Math.round(((nearprot[9][0])*111)*1000)} 公尺`
                   },
                   {
                     "type": "box",
