@@ -267,13 +267,10 @@ let showmap = (event,x,y,name,type)=>{
 let getnear =async (event,x,y)=>{
   let alldata=await fs.promises.readFile("./prot/全台.csv","utf-8");
   let longlist=[[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""],[0,0,0,"",""]];
-  for(i in alldata){
+  for(let i in alldata){
     let datacontent=alldata[i].split(",");
     let getlatlng=twd97_to_latlng(datacontent[2],datacontent[3]);
-    console.log("lng   "+getlatlng.lat+"  "+getlatlng.lng);
     let getlinelong=getline(x,y,getlatlng.lat,getlatlng.lng);
-    console.log("getlinelong   "+getlinelong);
-
     if(longlist[0][0]<getlinelong){
       longlist[0][0]=getlinelong;
       longlist[0][1]=getlatlng.lat;
