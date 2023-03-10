@@ -26,6 +26,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
     {
       await showtime (event);
     } else {
+      console.log(message.type);
+      console.log(message.text);
+      console.log(message);
       client.replyMessage (event.replyToken, [{ type: "text", text: "無此指令" }]);
     }
   }
