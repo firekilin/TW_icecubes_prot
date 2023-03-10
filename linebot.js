@@ -272,6 +272,7 @@ let getnear =async (event,x,y)=>{
     let datacontent=alldata[i].split(",");
     let getlatlng=twd97_to_latlng(datacontent[2],datacontent[3]);
     let getlinelong=getline(x,y,getlatlng.lat,getlatlng.lng);
+    console.log(getlinelong);
     if(longlist[0][0]<getlinelong){
       longlist[0][0]=getlinelong;
       longlist[0][1]=getlatlng.lat;
