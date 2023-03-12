@@ -630,7 +630,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             }
@@ -682,7 +684,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             }
@@ -759,7 +763,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             },
@@ -938,7 +944,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             },
@@ -1115,7 +1123,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             },
@@ -1292,59 +1302,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
-              },
-              "styles": { "footer": { "separator": false } }
-            }
-          ] }
-      },{
-        "type": "flex",
-        "altText": "系統",
-        "contents": { "type": "carousel",
-          "contents": [
-            ,{
-              "type": "bubble",
-              "size": "nano",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "顯示更多",
-                    "color": "#ffffff",
-                    "align": "start",
-                    "size": "md",
-                    "gravity": "center"
-                  }
                 ],
-                "backgroundColor": "#27D190",
-                "paddingTop": "19px",
-                "paddingAll": "12px",
-                "paddingBottom": "16px"
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                      {
-                        "type": "button",
-                        "height": "sm",
-                        "action": {
-                          "type": "postback",
-                          "label": "更多",
-                          "data": `more&${message.latitude}&${message.longitude}`
-                        },
-                        "style": "secondary"
-                      }
-                    ],
-                    "flex": 1
-                  }
-                ]
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             }
