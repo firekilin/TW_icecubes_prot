@@ -213,64 +213,6 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
-            },
-            {
-              "type": "bubble",
-              "size": "nano",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "No.4",
-                    "color": "#ffffff",
-                    "align": "start",
-                    "size": "md",
-                    "gravity": "center"
-                  }
-                ],
-                "backgroundColor": "#27D190",
-                "paddingTop": "19px",
-                "paddingAll": "12px",
-                "paddingBottom": "16px"
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": `${nearprot[3][4]}`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round((nearprot[3][0])*111)} 公里`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round(((nearprot[3][0])*111)*1000)} 公尺`
-                  },
-                  {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                      {
-                        "type": "button",
-                        "height": "sm",
-                        "action": {
-                          "type": "postback",
-                          "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[3][1]}&${nearprot[3][2]}&${nearprot[3][3]}&${nearprot[3][4]}`
-                        },
-                        "style": "secondary"
-                      }
-                    ],
-                    "flex": 1
-                  }
-                ]
-              },
-              "styles": { "footer": { "separator": false } }
             }
           ] }
       },{
