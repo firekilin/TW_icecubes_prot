@@ -271,66 +271,6 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 ]
               },
               "styles": { "footer": { "separator": false } }
-            },
-            {
-              "type": "bubble",
-              "size": "nano",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "No.5",
-                    "color": "#ffffff",
-                    "align": "start",
-                    "size": "md",
-                    "gravity": "center"
-                  }
-                ],
-                "backgroundColor": "#2593FA",
-                "paddingTop": "19px",
-                "paddingAll": "12px",
-                "paddingBottom": "16px"
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": `${nearprot[4][4]}`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round((nearprot[4][0])*111)} 公里`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round(((nearprot[4][0])*111)*1000)} 公尺`
-                  },
-                  {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                      {
-                        "type": "button",
-                        "height": "sm",
-                        "action": {
-                          "type": "postback",
-                          "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[4][1]}&${nearprot[4][2]}&${nearprot[4][3]}&${nearprot[4][4]}`
-                        },
-                        "style": "secondary"
-                      }
-                    ],
-                    "flex": 1
-                  }
-                ],
-                "spacing": "md",
-                "paddingAll": "12px"
-              },
-              "styles": { "footer": { "separator": false } }
             }
           ] }
       },{
