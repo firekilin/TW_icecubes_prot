@@ -89,7 +89,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             },
@@ -268,7 +270,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             },
@@ -446,7 +450,9 @@ router.post ("/", line.middleware (config), async(req, res) => {
                     ],
                     "flex": 1
                   }
-                ]
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
             },
