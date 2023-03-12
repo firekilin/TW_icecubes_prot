@@ -508,123 +508,6 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
-            },
-            {
-              "type": "bubble",
-              "size": "nano",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "No.9",
-                    "color": "#ffffff",
-                    "align": "start",
-                    "size": "md",
-                    "gravity": "center"
-                  }
-                ],
-                "backgroundColor": "#F77C59",
-                "paddingTop": "19px",
-                "paddingAll": "12px",
-                "paddingBottom": "16px"
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": `${nearprot[8][4]}`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round((nearprot[8][0])*111)} 公里`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round(((nearprot[8][0])*111)*1000)} 公尺`
-                  },
-                  {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                      {
-                        "type": "button",
-                        "height": "sm",
-                        "action": {
-                          "type": "postback",
-                          "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[8][1]}&${nearprot[8][2]}&${nearprot[8][3]}&${nearprot[8][4]}`
-                        },
-                        "style": "secondary"
-                      }
-                    ],
-                    "flex": 1
-                  }
-                ],
-                "spacing": "md",
-                "paddingAll": "12px"
-              },
-              "styles": { "footer": { "separator": false } }
-            },{
-              "type": "bubble",
-              "size": "nano",
-              "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "No.10",
-                    "color": "#ffffff",
-                    "align": "start",
-                    "size": "md",
-                    "gravity": "center"
-                  }
-                ],
-                "backgroundColor": "#27D190",
-                "paddingTop": "19px",
-                "paddingAll": "12px",
-                "paddingBottom": "16px"
-              },
-              "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": `${nearprot[9][4]}`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round((nearprot[9][0])*111)} 公里`
-                  },
-                  {
-                    "type": "text",
-                    "text": `${Math.round(((nearprot[9][0])*111)*1000)} 公尺`
-                  },
-                  {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                      {
-                        "type": "button",
-                        "height": "sm",
-                        "action": {
-                          "type": "postback",
-                          "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[9][1]}&${nearprot[9][2]}&${nearprot[9][3]}&${nearprot[9][4]}`
-                        },
-                        "style": "secondary"
-                      }
-                    ],
-                    "flex": 1
-                  }
-                ]
-              },
-              "styles": { "footer": { "separator": false } }
             }
           ] }
       },{
@@ -1168,6 +1051,123 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 ],
                 "spacing": "md",
                 "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            },
+            {
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "No.19",
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#F77C59",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${moreprot[18][4]}`
+                  },
+                  {
+                    "type": "text",
+                    "text": `${Math.round((moreprot[18][0])*111)} 公里`
+                  },
+                  {
+                    "type": "text",
+                    "text": `${Math.round(((moreprot[18][0])*111)*1000)} 公尺`
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${moreprot[18][1]}&${moreprot[18][2]}&${moreprot[18][3]}&${moreprot[18][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ],
+                "spacing": "md",
+                "paddingAll": "12px"
+              },
+              "styles": { "footer": { "separator": false } }
+            },{
+              "type": "bubble",
+              "size": "nano",
+              "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "No.20",
+                    "color": "#ffffff",
+                    "align": "start",
+                    "size": "md",
+                    "gravity": "center"
+                  }
+                ],
+                "backgroundColor": "#27D190",
+                "paddingTop": "19px",
+                "paddingAll": "12px",
+                "paddingBottom": "16px"
+              },
+              "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": `${moreprot[19][4]}`
+                  },
+                  {
+                    "type": "text",
+                    "text": `${Math.round((moreprot[19][0])*111)} 公里`
+                  },
+                  {
+                    "type": "text",
+                    "text": `${Math.round(((moreprot[19][0])*111)*1000)} 公尺`
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "height": "sm",
+                        "action": {
+                          "type": "postback",
+                          "label": "顯示地圖",
+                          "data": `消防栓地圖&${moreprot[19][1]}&${moreprot[19][2]}&${moreprot[19][3]}&${moreprot[19][4]}`
+                        },
+                        "style": "secondary"
+                      }
+                    ],
+                    "flex": 1
+                  }
+                ]
               },
               "styles": { "footer": { "separator": false } }
             }
