@@ -26,7 +26,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
     else if (message.type == "location")
     {
       let nearprot=await getnear(event,message.latitude,message.longitude);
-      botEcho(event.replyToken, [{
+      client.replyMessage(event.replyToken, [{
         "type": "flex",
         "altText": "消防栓",
         "contents": { "type": "carousel",
@@ -690,7 +690,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
     const postback = event.postback;
     if (postback.data.split("&")[0]=== "more"){
       let moreprot=await showmore(event,postback.data.split("&")[1],postback.data.split("&")[2]);
-      botEcho(event.replyToken, [{
+      client.replyMessage(event.replyToken, [{
         "type": "flex",
         "altText": "消防栓",
         "contents": { "type": "carousel",
@@ -1281,7 +1281,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[19][1]}&No.20&${moreprot[19][3]}&${moreprot[19][4]}`
+                          "data": `消防栓地圖&${moreprot[19][1]}&20&${moreprot[19][3]}&${moreprot[19][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1316,7 +1316,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
 
 //說明
 let info = async(event) => {
-  botEcho (event.replyToken, [{ type: "text",
+  client.replyMessage (event.replyToken, [{ type: "text",
     text: `
 作者：
   安安我是冰塊
@@ -1328,13 +1328,13 @@ let info = async(event) => {
 
   
   直接傳   [定位]
-  或輸入   [查詢系統]
+  或輸入   [消防栓查詢]
     ` }]);
 };
 
 //系統顯示
 let showtime = (event) => {
-  botEcho (event.replyToken, [
+  client.replyMessage (event.replyToken, [
     {
       "type": "flex",
       "altText": "冰塊消防栓查詢系統",
@@ -1518,7 +1518,7 @@ let showmore = async (event,x,y)=>{
 
 //取得地區消防栓資料
 let localprot = (event)=>{
-  botEcho (event.replyToken, [{ type: "text",
+  client.replyMessage (event.replyToken, [{ type: "text",
   text: `
 localprot
   ` }]);
@@ -1526,7 +1526,7 @@ localprot
 
 //轉為map訊息
 let showmap = (event,x,y,name,type)=>{
-  botEcho(event.replyToken, [
+  client.replyMessage(event.replyToken, [
       {
           type: 'location',
           title: type,
