@@ -40,7 +40,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.1",
+                    "text": "No-1",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -78,7 +78,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[0][1]}&No.1&${nearprot[0][3]}&${nearprot[0][4]}`
+                          "data": `消防栓地圖&${nearprot[0][1]}&No-1&${nearprot[0][3]}&${nearprot[0][4]}`
                         },
                         "style": "secondary"
                       }
@@ -100,7 +100,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.2",
+                    "text": "No-2",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -138,7 +138,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[1][1]}&No.2&${nearprot[1][3]}&${nearprot[1][4]}`
+                          "data": `消防栓地圖&${nearprot[1][1]}&No-2&${nearprot[1][3]}&${nearprot[1][4]}`
                         },
                         "style": "secondary"
                       }
@@ -161,7 +161,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   
                   {
                     "type": "text",
-                    "text": "No.3",
+                    "text": "No-3",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -199,7 +199,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[2][1]}&No.3&${nearprot[2][3]}&${nearprot[2][4]}`
+                          "data": `消防栓地圖&${nearprot[2][1]}&No-3&${nearprot[2][3]}&${nearprot[2][4]}`
                         },
                         "style": "secondary"
                       }
@@ -221,7 +221,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.4",
+                    "text": "No-4",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -259,7 +259,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[3][1]}&No.4&${nearprot[3][3]}&${nearprot[3][4]}`
+                          "data": `消防栓地圖&${nearprot[3][1]}&No-4&${nearprot[3][3]}&${nearprot[3][4]}`
                         },
                         "style": "secondary"
                       }
@@ -281,7 +281,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.5",
+                    "text": "No-5",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -319,7 +319,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[4][1]}&No.5&${nearprot[4][3]}&${nearprot[4][4]}`
+                          "data": `消防栓地圖&${nearprot[4][1]}&No-5&${nearprot[4][3]}&${nearprot[4][4]}`
                         },
                         "style": "secondary"
                       }
@@ -341,7 +341,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.6",
+                    "text": "No-6",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -379,7 +379,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[5][1]}&No.6&${nearprot[5][3]}&${nearprot[5][4]}`
+                          "data": `消防栓地圖&${nearprot[5][1]}&No-6&${nearprot[5][3]}&${nearprot[5][4]}`
                         },
                         "style": "secondary"
                       }
@@ -401,7 +401,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.7",
+                    "text": "No-7",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -439,7 +439,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[6][1]}&No.7&${nearprot[6][3]}&${nearprot[6][4]}`
+                          "data": `消防栓地圖&${nearprot[6][1]}&No-7&${nearprot[6][3]}&${nearprot[6][4]}`
                         },
                         "style": "secondary"
                       }
@@ -461,7 +461,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.8",
+                    "text": "No-8",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -499,7 +499,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[7][1]}&No.8&${nearprot[7][3]}&${nearprot[7][4]}`
+                          "data": `消防栓地圖&${nearprot[7][1]}&No-8&${nearprot[7][3]}&${nearprot[7][4]}`
                         },
                         "style": "secondary"
                       }
@@ -521,7 +521,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.9",
+                    "text": "No-9",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -559,7 +559,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[8][1]}&No.9&${nearprot[8][3]}&${nearprot[8][4]}`
+                          "data": `消防栓地圖&${nearprot[8][1]}&No-9&${nearprot[8][3]}&${nearprot[8][4]}`
                         },
                         "style": "secondary"
                       }
@@ -581,7 +581,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.10",
+                    "text": "No-10",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -619,7 +619,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[9][1]}&No.10&${nearprot[9][3]}&${nearprot[9][4]}`
+                          "data": `消防栓地圖&${nearprot[9][1]}&No-10&${nearprot[9][3]}&${nearprot[9][4]}`
                         },
                         "style": "secondary"
                       }
@@ -704,7 +704,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.11",
+                    "text": "No-11",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -742,7 +742,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[10][1]}&No.11&${moreprot[10][3]}&${moreprot[10][4]}`
+                          "data": `消防栓地圖&${moreprot[10][1]}&No-11&${moreprot[10][3]}&${moreprot[10][4]}`
                         },
                         "style": "secondary"
                       }
@@ -764,7 +764,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.12",
+                    "text": "No-12",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -802,7 +802,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[11][1]}&No.12&${moreprot[11][3]}&${moreprot[11][4]}`
+                          "data": `消防栓地圖&${moreprot[11][1]}&No-12&${moreprot[11][3]}&${moreprot[11][4]}`
                         },
                         "style": "secondary"
                       }
@@ -825,7 +825,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                   
                   {
                     "type": "text",
-                    "text": "No.13",
+                    "text": "No-13",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -863,7 +863,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[12][1]}&No.13&${moreprot[12][3]}&${moreprot[12][4]}`
+                          "data": `消防栓地圖&${moreprot[12][1]}&No-13&${moreprot[12][3]}&${moreprot[12][4]}`
                         },
                         "style": "secondary"
                       }
@@ -885,7 +885,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.14",
+                    "text": "No-14",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -923,7 +923,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[13][1]}&No.14&${moreprot[13][3]}&${moreprot[13][4]}`
+                          "data": `消防栓地圖&${moreprot[13][1]}&No-14&${moreprot[13][3]}&${moreprot[13][4]}`
                         },
                         "style": "secondary"
                       }
@@ -945,7 +945,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.15",
+                    "text": "No-15",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -983,7 +983,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[14][1]}&No.15&${moreprot[14][3]}&${moreprot[14][4]}`
+                          "data": `消防栓地圖&${moreprot[14][1]}&No-15&${moreprot[14][3]}&${moreprot[14][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1005,7 +1005,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.16",
+                    "text": "No-16",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -1043,7 +1043,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[15][1]}&No.16&${moreprot[15][3]}&${moreprot[15][4]}`
+                          "data": `消防栓地圖&${moreprot[15][1]}&No-16&${moreprot[15][3]}&${moreprot[15][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1064,7 +1064,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.17",
+                    "text": "No-17",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -1102,7 +1102,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[16][1]}&No.17&${moreprot[16][3]}&${moreprot[16][4]}`
+                          "data": `消防栓地圖&${moreprot[16][1]}&No-17&${moreprot[16][3]}&${moreprot[16][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1124,7 +1124,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.18",
+                    "text": "No-18",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -1162,7 +1162,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[17][1]}&No.18&${moreprot[17][3]}&${moreprot[17][4]}`
+                          "data": `消防栓地圖&${moreprot[17][1]}&No-18&${moreprot[17][3]}&${moreprot[17][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1184,7 +1184,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.19",
+                    "text": "No-19",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -1222,7 +1222,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[18][1]}&No.19&${moreprot[18][3]}&${moreprot[18][4]}`
+                          "data": `消防栓地圖&${moreprot[18][1]}&No-19&${moreprot[18][3]}&${moreprot[18][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1243,7 +1243,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "contents": [
                   {
                     "type": "text",
-                    "text": "No.20",
+                    "text": "No-20",
                     "color": "#ffffff",
                     "align": "start",
                     "size": "md",
@@ -1281,7 +1281,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[19][1]}&20&${moreprot[19][3]}&${moreprot[19][4]}`
+                          "data": `消防栓地圖&${moreprot[19][1]}&No-20&${moreprot[19][3]}&${moreprot[19][4]}`
                         },
                         "style": "secondary"
                       }
