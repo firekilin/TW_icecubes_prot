@@ -19,18 +19,14 @@ router.post ("/", line.middleware (config), async(req, res) => {
   if (event.type === "message") {
     const message = event.message;
 
-    if (message.type === "text" && message.text === "作者") 
-    {
-      await info (event);
-    }
-    else if (message.type == "text" && message.text === "查詢系統")
+    if (message.type == "text" && message.text === "消防栓查詢")
     {
       await showtime (event);
     } 
     else if (message.type == "location")
     {
       let nearprot=await getnear(event,message.latitude,message.longitude);
-      client.replyMessage(event.replyToken, [{
+      botEcho(event.replyToken, [{
         "type": "flex",
         "altText": "消防栓",
         "contents": { "type": "carousel",
@@ -82,7 +78,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[0][1]}&${nearprot[0][2]}&${nearprot[0][3]}&${nearprot[0][4]}`
+                          "data": `消防栓地圖&${nearprot[0][1]}&No.1&${nearprot[0][3]}&${nearprot[0][4]}`
                         },
                         "style": "secondary"
                       }
@@ -142,7 +138,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[1][1]}&${nearprot[1][2]}&${nearprot[1][3]}&${nearprot[1][4]}`
+                          "data": `消防栓地圖&${nearprot[1][1]}&No.2&${nearprot[1][3]}&${nearprot[1][4]}`
                         },
                         "style": "secondary"
                       }
@@ -203,7 +199,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[2][1]}&${nearprot[2][2]}&${nearprot[2][3]}&${nearprot[2][4]}`
+                          "data": `消防栓地圖&${nearprot[2][1]}&No.3&${nearprot[2][3]}&${nearprot[2][4]}`
                         },
                         "style": "secondary"
                       }
@@ -263,7 +259,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[3][1]}&${nearprot[3][2]}&${nearprot[3][3]}&${nearprot[3][4]}`
+                          "data": `消防栓地圖&${nearprot[3][1]}&No.4&${nearprot[3][3]}&${nearprot[3][4]}`
                         },
                         "style": "secondary"
                       }
@@ -323,7 +319,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[4][1]}&${nearprot[4][2]}&${nearprot[4][3]}&${nearprot[4][4]}`
+                          "data": `消防栓地圖&${nearprot[4][1]}&No.5&${nearprot[4][3]}&${nearprot[4][4]}`
                         },
                         "style": "secondary"
                       }
@@ -383,7 +379,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[5][1]}&${nearprot[5][2]}&${nearprot[5][3]}&${nearprot[5][4]}`
+                          "data": `消防栓地圖&${nearprot[5][1]}&No.6&${nearprot[5][3]}&${nearprot[5][4]}`
                         },
                         "style": "secondary"
                       }
@@ -443,7 +439,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[6][1]}&${nearprot[6][2]}&${nearprot[6][3]}&${nearprot[6][4]}`
+                          "data": `消防栓地圖&${nearprot[6][1]}&No.7&${nearprot[6][3]}&${nearprot[6][4]}`
                         },
                         "style": "secondary"
                       }
@@ -503,7 +499,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[7][1]}&${nearprot[7][2]}&${nearprot[7][3]}&${nearprot[7][4]}`
+                          "data": `消防栓地圖&${nearprot[7][1]}&No.8&${nearprot[7][3]}&${nearprot[7][4]}`
                         },
                         "style": "secondary"
                       }
@@ -563,7 +559,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[8][1]}&${nearprot[8][2]}&${nearprot[8][3]}&${nearprot[8][4]}`
+                          "data": `消防栓地圖&${nearprot[8][1]}&No.9&${nearprot[8][3]}&${nearprot[8][4]}`
                         },
                         "style": "secondary"
                       }
@@ -623,7 +619,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[9][1]}&${nearprot[9][2]}&${nearprot[9][3]}&${nearprot[9][4]}`
+                          "data": `消防栓地圖&${nearprot[9][1]}&No.10&${nearprot[9][3]}&${nearprot[9][4]}`
                         },
                         "style": "secondary"
                       }
@@ -635,14 +631,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                 "paddingAll": "12px"
               },
               "styles": { "footer": { "separator": false } }
-            }
-          ] }
-      },{
-        "type": "flex",
-        "altText": "系統",
-        "contents": { "type": "carousel",
-          "contents": [
-            {
+            },{
               "type": "bubble",
               "size": "nano",
               "header": {
@@ -695,16 +684,13 @@ router.post ("/", line.middleware (config), async(req, res) => {
         
       ]
     );
-    } else {
-      
-      client.replyMessage (event.replyToken, [{ type: "text", text: "無此指令 可以輸入：查詢系統 或點選底下按鈕" }]);
-    }
+    } 
   }
   if (event.type === "postback"){
     const postback = event.postback;
     if (postback.data.split("&")[0]=== "more"){
       let moreprot=await showmore(event,postback.data.split("&")[1],postback.data.split("&")[2]);
-      client.replyMessage(event.replyToken, [{
+      botEcho(event.replyToken, [{
         "type": "flex",
         "altText": "消防栓",
         "contents": { "type": "carousel",
@@ -756,7 +742,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[10][1]}&${moreprot[10][2]}&${moreprot[10][3]}&${moreprot[10][4]}`
+                          "data": `消防栓地圖&${moreprot[10][1]}&No.11&${moreprot[10][3]}&${moreprot[10][4]}`
                         },
                         "style": "secondary"
                       }
@@ -816,7 +802,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[11][1]}&${moreprot[11][2]}&${moreprot[11][3]}&${moreprot[11][4]}`
+                          "data": `消防栓地圖&${moreprot[11][1]}&No.12&${moreprot[11][3]}&${moreprot[11][4]}`
                         },
                         "style": "secondary"
                       }
@@ -877,7 +863,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[12][1]}&${moreprot[12][2]}&${moreprot[12][3]}&${moreprot[12][4]}`
+                          "data": `消防栓地圖&${moreprot[12][1]}&No.13&${moreprot[12][3]}&${moreprot[12][4]}`
                         },
                         "style": "secondary"
                       }
@@ -937,7 +923,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[13][1]}&${moreprot[13][2]}&${moreprot[13][3]}&${moreprot[13][4]}`
+                          "data": `消防栓地圖&${moreprot[13][1]}&No.14&${moreprot[13][3]}&${moreprot[13][4]}`
                         },
                         "style": "secondary"
                       }
@@ -997,7 +983,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[14][1]}&${moreprot[14][2]}&${moreprot[14][3]}&${moreprot[14][4]}`
+                          "data": `消防栓地圖&${moreprot[14][1]}&No.15&${moreprot[14][3]}&${moreprot[14][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1057,7 +1043,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[15][1]}&${moreprot[15][2]}&${moreprot[15][3]}&${moreprot[15][4]}`
+                          "data": `消防栓地圖&${moreprot[15][1]}&No.16&${moreprot[15][3]}&${moreprot[15][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1116,7 +1102,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[16][1]}&${moreprot[16][2]}&${moreprot[16][3]}&${moreprot[16][4]}`
+                          "data": `消防栓地圖&${moreprot[16][1]}&No.17&${moreprot[16][3]}&${moreprot[16][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1176,7 +1162,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[17][1]}&${moreprot[17][2]}&${moreprot[17][3]}&${moreprot[17][4]}`
+                          "data": `消防栓地圖&${moreprot[17][1]}&No.18&${moreprot[17][3]}&${moreprot[17][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1236,7 +1222,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[18][1]}&${moreprot[18][2]}&${moreprot[18][3]}&${moreprot[18][4]}`
+                          "data": `消防栓地圖&${moreprot[18][1]}&No.19&${moreprot[18][3]}&${moreprot[18][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1295,7 +1281,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${moreprot[19][1]}&${moreprot[19][2]}&${moreprot[19][3]}&${moreprot[19][4]}`
+                          "data": `消防栓地圖&${moreprot[19][1]}&No.20&${moreprot[19][3]}&${moreprot[19][4]}`
                         },
                         "style": "secondary"
                       }
@@ -1330,7 +1316,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
 
 //說明
 let info = async(event) => {
-  client.replyMessage (event.replyToken, [{ type: "text",
+  botEcho (event.replyToken, [{ type: "text",
     text: `
 作者：
   安安我是冰塊
@@ -1348,7 +1334,7 @@ let info = async(event) => {
 
 //系統顯示
 let showtime = (event) => {
-  client.replyMessage (event.replyToken, [
+  botEcho (event.replyToken, [
     {
       "type": "flex",
       "altText": "冰塊消防栓查詢系統",
@@ -1532,7 +1518,7 @@ let showmore = async (event,x,y)=>{
 
 //取得地區消防栓資料
 let localprot = (event)=>{
-  client.replyMessage (event.replyToken, [{ type: "text",
+  botEcho (event.replyToken, [{ type: "text",
   text: `
 localprot
   ` }]);
@@ -1540,7 +1526,7 @@ localprot
 
 //轉為map訊息
 let showmap = (event,x,y,name,type)=>{
-  client.replyMessage(event.replyToken, [
+  botEcho(event.replyToken, [
       {
           type: 'location',
           title: type,
