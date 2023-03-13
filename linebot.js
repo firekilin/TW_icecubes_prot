@@ -1465,6 +1465,7 @@ localprot
 
 //轉為map訊息
 let showmap = (event,x,y,name,type)=>{
+  console.log(name);
   client.replyMessage(event.replyToken, [
       {
           type: 'location',
