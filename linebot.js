@@ -1465,8 +1465,16 @@ localprot
 
 //轉為map訊息
 let showmap = (event,x,y,name,type)=>{
-  console.log(name);
-  
+  client.replyMessage(event.replyToken, [
+      {
+          type: 'location',
+          title: type,
+          address: name,
+          latitude: x,
+          longitude: y
+      }
+    ]
+  );
 }
 
 //取得最近十筆
