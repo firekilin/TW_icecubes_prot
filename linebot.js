@@ -360,7 +360,7 @@ router.post ("/", line.middleware (config), async(req, res) => {
                         "action": {
                           "type": "postback",
                           "label": "顯示地圖",
-                          "data": `消防栓地圖&${nearprot[5][1]}&No-6&${nearprot[5][3]}&${nearprot[5][4]}`
+                          "data": `消防栓地圖&${nearprot[5][1]}&No6&${nearprot[5][3]}&${nearprot[5][4]}`
                         },
                         "style": "secondary"
                       }
