@@ -2,6 +2,9 @@
 ## 台灣消防栓位置告知 lint bot
 ### [line機器人](https://liff.line.me/1645278921-kWRPP32q/?accountId=092byusf)
 ### [拿錢砸我](https://p.ecpay.com.tw/8E29ABF)
+--------------
+## node.js
+
 ```
 .env 
 port=80
@@ -13,3 +16,18 @@ channelSecret =""
 
 `$ npm start`
 
+
+
+------------
+
+## google app script
+```
+// 必要設定
+// 設定安全碼
+const config = { 
+  channelAccessToken: "",
+  channelSecret: "" 
+};
+```
+
+設定佈署
