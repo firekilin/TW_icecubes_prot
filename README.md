@@ -1,6 +1,7 @@
 # TW_icecubes_prot
 ## 台灣消防栓位置告知 lint bot
-### [line機器人](https://liff.line.me/1645278921-kWRPP32q/?accountId=092byusf)
+### [line機器人](https://line.me/R/ti/p/%40716vymld)
+### [line機器人-備](https://line.me/R/ti/p/%40092byusf)
 ### [拿錢砸我](https://p.ecpay.com.tw/8E29ABF)
 --------------
 ## node.js
