@@ -20,7 +20,7 @@ channelSecret =""
 
 ------------
 
-## google app script
+## [google app script](https://github.com/firekilin/TW_icecubes_prot/tree/main/google_app_script)
 ```
 // 必要設定
 // 設定安全碼
